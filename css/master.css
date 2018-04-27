@@ -1,4 +1,6 @@
-
+body  {
+  background-image: url("../img/sepia.jpg");
+}
   h1 {
     font-family: 'Euphoria script', cursive;
     font-size: 50pt;
