@@ -12,14 +12,13 @@
 #shoe  {
     height: 500px;
     width: 1000px;
+    overflow: visible;
 }
 #story {
   padding-top: 150px;
   text-align: center;
   font-size: 64pt;
   font-family: 'Lobster', cursive;
-
-
 }
 
 }
@@ -117,3 +116,23 @@ body  {
     .data-dropdown-menu {
       z-index: 1;
     }
+
+    Object.assign(this, {
+      moveDelay: 0,
+      x: rest.initialX,
+      y: rest.initialY,
+      initialBg: rest.bg,
+      moveStart: performance.now(),
+      transitColorCache: new Map(),
+      finalColorCache: new Map(),
+
+      reverseTransition: false,
+      moveFinished: false,
+      transition: false,
+      shouldColor: false,
+    shouldScale: false,
+
+    props: {
+      transitionEasing,
+      moveEasing,
+      onBlockTransitionFinish,
