@@ -1,0 +1,61 @@
+
+  .container{
+    margin-top: -20px;
+    position:absolute;
+    margin-left: 140px;
+    -webkit-animation: movement 5s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: movement 5s infinite alternate;
+  }
+  .box{
+    width: 320px;
+    height: 320px;
+    position: relative;
+    background-image: url("https://piskel-imgstore-b.appspot.com/img/f133f323-6be0-11e8-bf80-cb91cdd1d8fb.gif");
+
+
+    -webkit-animation: play .8s steps(4) infinite;
+       -moz-animation: play .8s steps(4) infinite;
+        -ms-animation: play .8s steps(4) infinite;
+         -o-animation: play .8s steps(4) infinite;
+            animation: play 1s steps(4) infinite;
+}
+
+@-webkit-keyframes play {
+   from { background-position:    -15px; }
+     to { background-position: -915px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    -15px; }
+     to { background-position: -915px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    -15px; }
+     to { background-position: -915px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    -15px; }
+     to { background-position: -915px; }
+}
+
+@keyframes play {
+   from { background-position:    -15px; }
+     to { background-position: -15px; }
+}
+
+/* @-webkit-keyframes movement {
+  0%   {left: 0px; top: 0px;}
+  33%  {left: 600px; top: 0px;}
+  66%  {left: 600px; top: 340px;}
+  100%  {left: 0px; top: 340px;}
+}
+
+@keyframes movement {
+  0%   {left: 0px; top: 0px;}
+  33%  {left: 600px; top: 0px;}
+  66%  {left: 600px; top: 340px;}
+  100%  {left: 0px; top: 340px;}
+} */

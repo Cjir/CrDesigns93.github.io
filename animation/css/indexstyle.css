@@ -1,0 +1,30 @@
+nav a.yellow {
+color: yellow;
+}
+a.blue {
+  color:blue;
+}
+a.green {
+  color: green;
+}
+p.first {
+    font-family: 'Monoton', cursive;
+  animation: grow1 5s infinite alternate;
+  text-align: center;
+}
+p.second {
+  font-family: 'Monoton', cursive;
+  animation: grow1 5s infinite alternate-reverse;
+  text-align: center;
+}
+
+@keyframes grow1 {
+  from {
+    font-size: 6px;
+    color:green;;
+  }
+  to {
+    font-size: 80px;
+    color: green;
+  }
+}
